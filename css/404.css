@@ -1,0 +1,503 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: Minecraft;
+    src: url(../fonts/Minecraft/ttf/MinecraftRegular-Bmg3.ttf) format(truetype),
+        url(../fonts/Minecraft/otf/MinecraftRegular-Bmg3.otf) format(opentype),
+        url(../fonts/Minecraft/woff/MinecraftRegular-Bmg3.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Minecraft;
+    src: url(../fonts/Minecraft/ttf/MinecraftBold-nMK1.ttf) format(truetype),
+        url(../fonts/Minecraft/otf/MinecraftBold-nMK1.otf) format(opentype),
+        url(../fonts/Minecraft/woff/MinecraftBold-nMK1.woff) format(woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Minecraft;
+    src: url(../fonts/Minecraft/ttf/MinecraftBoldItalic-1y1e.ttf) format(truetype),
+        url(../fonts/Minecraft/otf/MinecraftBoldItalic-1y1e.otf) format(truetype),
+        url(../fonts/Minecraft/woff/MinecraftBoldItalic-1y1e.woff) format(woff);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Minecraft;
+    src: url(../fonts/Minecraft/ttf/MinecraftItalic-R8Mo.ttf) format(truetype),
+        url(../fonts/Minecraft/otf/MinecraftItalic-R8Mo.otf) format(opentype),
+        url(../fonts/Minecraft/woff/MinecraftItalic-R8Mo.woff) format(woff);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/ttf/Roboto-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/ttf/Roboto-Bold.ttf) format(truetype);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/ttf/Roboto-BoldItalic.ttf) format(truetype);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/ttf/Roboto-Black.ttf) format(truetype);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/ttf/Roboto-BlackItalic.ttf) format(truetype);
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/ttf/Roboto-Italic.ttf) format(truetype);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/ttf/Roboto-Light.ttf) format(truetype);
+    font-weight: 25;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/ttf/Roboto-LightItalic.ttf) format(truetype);
+    font-weight: 25;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/ttf/Roboto-Medium.ttf) format(truetype);
+    font-weight: 50;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/ttf/Roboto-MediumItalic.ttf) format(truetype);
+    font-weight: 50;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/ttf/Roboto-Thin.ttf) format(truetype);
+    font-weight: 10;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/ttf/Roboto-Thin.ttf) format(truetype);
+    font-weight: 10;
+    font-style: italic;
+}
+
+body {
+    background-color: #0d041c;
+    color: #000000;
+    margin: 0;
+    font-family: Roboto;
+}
+
+nav {
+    z-index: 1000;
+    position: fixed;
+    background-color: #1a1b1e;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border-bottom: solid 1px #2b2f37;
+    box-shadow: 0px 5px 10px black;
+    font-family: Roboto;
+    font-weight: 100;
+}
+
+nav a img {
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+nav div {
+    height: 50px;
+    width: 100px;
+    display: none;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+nav div:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+nav div:hover a:link {
+    color: #000000;
+}
+
+nav div:hover a:visited {
+    color: #000000;
+}
+
+nav div:hover svg {
+    fill: #000000;
+}
+
+nav div svg {
+    fill: #ffffff;
+    position: relative;
+    transition: 0.2s;
+}
+
+.lxbs {
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Minecraft;
+    font-weight: normal;
+}
+
+@media screen and (min-width: 900px) {
+    nav div {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .lxbs {
+        position: relative;
+        margin-right: 60px;
+        top: 0;
+    }
+    nav img {
+        position: relative;
+    }
+}
+
+navigator {
+    fill: #ffffff;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    list-style: none;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+navigator div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+}
+
+navigator ul {
+    list-style: none;
+}
+
+navigator svg {
+    position: absolute;
+    width: 50px;
+    top: 0;
+    right: 10px;
+    stroke: #ffffff;
+}
+
+navigator ul li ul {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #1a1b1e;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    list-style: none;
+    right: 0px;
+    top: 65px;
+    z-index: 99;
+    color: #ffffff;
+    border-bottom: solid 1px #2b2f37;
+    box-shadow: 0px 11px 10px black;
+}
+
+@media screen and (min-width: 900px) {
+    navigator {
+       display: none;
+    }
+}
+
+header {
+    background-image: url(../img/server_setup/server_setup_software_14_06_2022_2.png);
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+
+.fontTitle {
+    font-family: Minecraft;
+    color: #FC5454;
+    font-size: 10vw;
+    text-shadow: #3E1516 3px 3px 1px;
+}
+
+@media screen and (min-width: 1000px) {
+    .fontTitle {
+       font-size: 100px;
+    }
+}
+
+.fontUndertitle {
+    font-family: Minecraft;
+    color: #FFFC56;
+    font-size: 5vw;
+    text-shadow: #9d9b32 3px 3px 1px;
+}
+
+@media screen and (min-width: 1000px) {
+    .fontUndertitle {
+       font-size: 50px;
+    }
+}
+
+.home {
+    margin: 20px;
+    padding: 10px 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: solid 1px black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    z-index: 99;
+    position: sticky;
+}
+
+.home:hover {
+    background-color: #b8b8b8;
+}
+
+.home svg {
+    width: 15px;
+}
+
+content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    background-color: #F4F5F7;
+    height: auto;
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url(../img/other/layer13.svg);
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.ohio {
+    background-image: url(../img/other/ohio.svg);
+    aspect-ratio: 900/600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer {
+    height: auto;
+    color: #838793;
+    background-color: #111114;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 775px) {
+    footer {
+       flex-direction: row;
+    }
+}
+
+footer table {
+    width: 100%;
+    height: 300px;
+    border-bottom: solid 1px #2b2f37;
+    padding: 20px 20px;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer h1 {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Minecraft;
+    font-weight: bold;
+}
+
+footer a {
+    color: #838793;
+    transition: 0.2s;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer a:link {
+    color: #838793;
+    transition: 0.2s;
+}
+
+footer a:link:hover {
+    color: #ffffff;
+}
+
+footer a:visited {
+    color: #838793;
+    transition: 0.2s;
+}
+
+footer a:visited:hover {
+    color: #ffffff;
+}
+
+footer svg {
+    fill: #838793;
+    transition: 0.2s;
+}
+
+footer a:hover svg {
+    fill: #ffffff;
+}
+
+.end {
+    padding: 20px 20px;
+    height: auto;
+    color: #838793;
+    background-color: #111114;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.end a {
+    color: #838793;
+    transition: 0.2s;
+}
+
+.end a:hover {
+    color: #ffffff;
+}
+
+pride {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20px;
+}
+
+red {
+    height: 100%;
+    width: calc(100% / 6);
+    background-color: red;
+    color: red;
+}
+
+orange {
+    height: 100%;
+    width: calc(100% / 6);
+    background-color: orange;
+    color: orange;
+}
+
+yellow {
+    height: 100%;
+    width: calc(100% / 6);
+    background-color: yellow;
+    color: yellow;
+}
+
+green {
+    height: 100%;
+    width: calc(100% / 6);
+    background-color: green;
+    color: green;
+}
+
+blue {
+    height: 100%;
+    width: calc(100% / 6);
+    background-color: blue;
+    color: blue;
+}
+
+purple {
+    height: 100%;
+    width: calc(100% / 6);
+    background-color: purple;
+    color: purple;
+}
