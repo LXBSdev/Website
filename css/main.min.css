@@ -1,0 +1,502 @@
+@font-face {
+  font-family: "Minecraft";
+  src: url(../fonts/Minecraft/ttf/MinecraftRegular-Bmg3.ttf) format(truetype), url(../fonts/Minecraft/otf/MinecraftRegular-Bmg3.otf) format(opentype), url(../fonts/Minecraft/woff/MinecraftRegular-Bmg3.woff) format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Minecraft";
+  src: url(../fonts/Minecraft/ttf/MinecraftBold-nMK1.ttf) format(truetype), url(../fonts/Minecraft/otf/MinecraftBold-nMK1.otf) format(opentype), url(../fonts/Minecraft/woff/MinecraftBold-nMK1.woff) format(woff);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Minecraft";
+  src: url(../fonts/Minecraft/ttf/MinecraftBoldItalic-1y1e.ttf) format(truetype), url(../fonts/Minecraft/otf/MinecraftBoldItalic-1y1e.otf) format(truetype), url(../fonts/Minecraft/woff/MinecraftBoldItalic-1y1e.woff) format(woff);
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Minecraft";
+  src: url(../fonts/Minecraft/ttf/MinecraftItalic-R8Mo.ttf) format(truetype), url(../fonts/Minecraft/otf/MinecraftItalic-R8Mo.otf) format(opentype), url(../fonts/Minecraft/woff/MinecraftItalic-R8Mo.woff) format(woff);
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Regular.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Bold.ttf) format(truetype);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-BoldItalic.ttf) format(truetype);
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Black.ttf) format(truetype);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-BlackItalic.ttf) format(truetype);
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Italic.ttf) format(truetype);
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Light.ttf) format(truetype);
+  font-weight: 25;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-LightItalic.ttf) format(truetype);
+  font-weight: 25;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Medium.ttf) format(truetype);
+  font-weight: 50;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-MediumItalic.ttf) format(truetype);
+  font-weight: 50;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Thin.ttf) format(truetype);
+  font-weight: 10;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Thin.ttf) format(truetype);
+  font-weight: 10;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Regular.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Bold.ttf) format(truetype);
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-BoldItalic.ttf) format(truetype);
+  font-weight: bolder;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Italic.ttf) format(truetype);
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Light.ttf) format(truetype);
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-LightItalic.ttf) format(truetype);
+  font-weight: light;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Medium.ttf) format(truetype);
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-MediumItalic.ttf) format(truetype);
+  font-weight: medium;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-SemiBold.ttf) format(truetype);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-SemiBoldItalic.ttf) format(truetype);
+  font-weight: bold;
+  font-style: italic;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a:link {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+a:visited {
+  color: #f3f3f3;
+}
+
+body {
+  background-color: #0d041c;
+  color: #f3f3f3;
+  margin: 0;
+  font-family: "Zilla Slab";
+}
+
+button {
+  background-color: #f3f3f3;
+  border: 5px solid #000;
+  font-size: larger;
+  font-family: "Zilla Slab";
+  color: #000;
+  transition: 0.1s;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.699);
+}
+button:hover {
+  background-color: #ff55ff;
+  color: #f3f3f3;
+}
+button:active {
+  background-color: rgb(180, 50, 180);
+  transform: translate(9px, 9px);
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.699);
+}
+
+#backtop {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 999;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+}
+#backtop:hover svg {
+  fill: #f3f3f3;
+}
+#backtop svg {
+  fill: #000;
+  rotate: -45deg;
+}
+
+.nav {
+  z-index: 1000;
+  position: fixed;
+  background-image: linear-gradient(rgb(26, 27, 30), rgba(26, 27, 30, 0.9));
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 100;
+}
+.nav a img {
+  height: 50px;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  border-radius: 5px;
+  transition: 0.1s;
+  z-index: 100;
+}
+.nav a img:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.699);
+}
+.nav a img:active {
+  transform: translate(0px, 0px);
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.699);
+}
+.nav div {
+  border: 5px solid transparent;
+  height: 40px;
+  width: 110px;
+  display: none;
+  margin: 5px;
+  transition: 0.1s;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 900px) {
+  .nav div {
+    display: flex;
+    position: relative;
+    top: 5px;
+  }
+  .nav div:hover {
+    border: 5px solid #000;
+    background-color: #ff55ff;
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.699);
+  }
+  .nav div:active {
+    background-color: rgb(180, 50, 180);
+    transform: translate(0px, 0px);
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.699);
+  }
+}
+.nav div svg {
+  fill: #f3f3f3;
+  position: relative;
+  z-index: 100;
+}
+
+.mobile_nav {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  list-style: none;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+.mobile_nav div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  font-size: 30px;
+}
+.mobile_nav div select {
+  font-family: "Zilla Slab";
+  height: auto;
+  width: auto;
+  border: none;
+  background: transparent;
+  color: #f3f3f3;
+  font-size: 30px;
+  font-weight: bold;
+}
+.mobile_nav div select:hover {
+  background: #212127;
+}
+.mobile_nav ul {
+  list-style: none;
+}
+.mobile_nav svg {
+  position: absolute;
+  width: 50px;
+  top: 0;
+  right: 0;
+  fill: #ffffff;
+}
+@media (min-width: 900px) {
+  .mobile_nav {
+    display: none;
+  }
+}
+
+#navigator {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-image: linear-gradient(rgba(26, 27, 30, 0.9), rgb(26, 27, 30), rgb(26, 27, 30));
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  list-style: none;
+  right: 0px;
+  top: 0px;
+  z-index: 99;
+}
+
+.spacer {
+  aspect-ratio: 960/400;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url(../img/other/layer15.svg);
+}
+
+.layer2 {
+  background-image: url(../img/other/layer6.svg);
+}
+
+.layer3 {
+  background-image: url(../img/other/blob-scene-hakei-2.svg);
+}
+
+.layer5 {
+  background-image: url(../img/other/blob-scene-haikei-1.svg);
+}
+
+.layer4 {
+  background-image: url(../img/other/circle-scatter-haikei-2.svg);
+}
+
+footer {
+  height: auto;
+  color: #838793;
+  background-color: #111114;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto;
+  font-weight: bold;
+}
+footer table {
+  width: 100%;
+  height: 300px;
+  border-bottom: solid 1px #2b2f37;
+  padding: 20px 20px;
+}
+footer img {
+  width: 100px;
+  border-radius: 5px;
+}
+footer h1 {
+  color: #f3f3f3;
+  font-size: 20px;
+  font-family: Minecraft;
+  font-weight: bold;
+}
+footer a {
+  color: #838793;
+  transition: 0.2s;
+}
+footer svg {
+  fill: #838793;
+  transition: 0.2s;
+}
+footer select {
+  width: 110px;
+  height: 30px;
+  border: none;
+  background: #111114;
+  color: #838793;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: large;
+}
+@media (min-width: 900px) {
+  footer {
+    flex-direction: row;
+  }
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+footer a:link {
+  color: #838793;
+  transition: 0.2s;
+}
+
+footer a:link:hover {
+  color: #ffffff;
+}
+
+footer a:visited {
+  color: #838793;
+  transition: 0.2s;
+}
+
+footer a:visited:hover {
+  color: #ffffff;
+}
+
+footer a:hover svg {
+  fill: #ffffff;
+}
+
+footer select:hover {
+  background: #212127;
+}
+
+.end {
+  padding: 20px 20px;
+  height: auto;
+  color: #838793;
+  background-color: #111114;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+.end a {
+  color: #838793;
+  transition: 0.2s;
+}
+
+.end a:hover {
+  color: #ffffff;
+}
+
+pride {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 20px;
+}
+
+red {
+  height: 100%;
+  width: 16.6666666667%;
+  background-color: red;
+  color: red;
+}
+
+orange {
+  height: 100%;
+  width: 16.6666666667%;
+  background-color: orange;
+  color: orange;
+}
+
+yellow {
+  height: 100%;
+  width: 16.6666666667%;
+  background-color: yellow;
+  color: yellow;
+}
+
+green {
+  height: 100%;
+  width: 16.6666666667%;
+  background-color: green;
+  color: green;
+}
+
+blue {
+  height: 100%;
+  width: 16.6666666667%;
+  background-color: blue;
+  color: blue;
+}
+
+purple {
+  height: 100%;
+  width: 16.6666666667%;
+  background-color: purple;
+  color: purple;
+}/*# sourceMappingURL=main.min.css.map */

@@ -2,98 +2,110 @@
 <html lang="de">
 
 <head>
-    <title>LXBS - 404 - Page Not Found</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/logo/logo.ico" />
-    <link rel="stylesheet" href="../css/404.css">
+    <title>404 - Page Not Found</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo/logo.ico" />
+    <link rel="stylesheet" href="../css/error.scss">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <nav>
-        <a href="#">
-            <img src="img/logo/logo.png" alt="LXBS Logo">
+        <a href="index.html">
+            <img src="../img/logo/logo.png" alt="LXBS Logo">
         </a>
         <a href="index.html" title="Home">
             <div class="lxbs">
                 LXBS
             </div>
         </a>
-        <a href="server.html" title="LXBS">
-            <div>
+        <a href="server.html" title="About the server">
+            <div class="div-1">
                 Server
             </div>
         </a>
-        <a href="games.html" title="Minigames">
-            <div>
-                Games
+        <a href="dev/dev.html" title="Development">
+            <div class="div-3">
+                Dev
             </div>
         </a>
-        <a href="leaderboard.html" title="Leaderboard Minigames">
-            <div>
-                Leaderboard
+        <a href="https://cloud.lxbs.de" title="Downloads">
+            <div class="div-4">
+                Downloads
             </div>
         </a>
-        <a  href="discord.html" title="Discord - LXBS">
-            <div>
+        <a href="http://discord.lxbs.de" title="Discord - LXBS">
+            <div class="div-5">
                 Discord
-                
+
             </div>
         </a>
         <a href="support.html" title="Support & Help">
-            <div>
+            <div class="div-6">
                 Support
             </div>
         </a>
-        <navigator>
+        <div class="navigator">
             <ul>
                 <li>
-                    <a href="javascript:void(0);" onclick="myFunction()">
+                    <a href="javascript:void(0);" onclick="navigator()">
                         <svg id="svg-nav" viewBox="0 0 24 24">
-                            <path d="M13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6C12.5523 6 13 5.55228 13 5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path
+                                d="M13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6C12.5523 6 13 5.55228 13 5Z"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12Z"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19Z"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
                     <ul id="navigator">
                         <li>
                             <a href="index.html" title="Home">
-                                <div>
+                                <div class="div-1">
                                     Home
                                 </div>
                             </a>
-                            <a href="server.html" title="LXBS">
-                                <div>
+                            <a href="server.html" title="About the server">
+                                <div class="div-1">
                                     Server
                                 </div>
                             </a>
-                            <a href="games.html" title="Minigames">
-                                <div>
-                                    Games
+                            <a href="dev/dev.html" title="Development">
+                                <div class="div-3">
+                                    Dev
                                 </div>
                             </a>
-                            <a href="leaderboard.html" title="Leaderboard Minigames">
-                                <div>
-                                    Leaderboard
+                            <a href="https://cloud.lxbs.de" title="Downloads">
+                                <div class="div-4">
+                                    Downloads
                                 </div>
                             </a>
-                            <a  href="discord.html" title="Discord - LXBS">
-                                <div>
+                            <a href="http://discord.lxbs.de" title="Discord - LXBS">
+                                <div class="div-5">
                                     Discord
-                                    
+
                                 </div>
                             </a>
                             <a href="support.html" title="Support & Help">
-                                <div>
+                                <div class="div-6">
                                     Support
                                 </div>
                             </a>
+                            <div>
+                                <select onchange="javascript:location.href = this.value;">
+                                    <option value='none'>Language</option>
+                                    <option value="index.html">English</option>
+                                    <option value="../de/index.html">Deutsch</option>
+                                </select>
+                            </div>
                         </li>
                     </ul>
-
                 </li>
             </ul>
-        </navigator>
+        </div>
     </nav>
     <header>
         <div class="fontTitle">
@@ -112,7 +124,7 @@
                                 v-63.541c0-5.446,5.005-10.405,10.5-10.405h42c5.238,0,9.5,4.668,9.5,10.405v63.541c0,10.87,9.388,20.053,20.5,20.053h61.5
                                 c11.028,0,20-8.996,20-20.053V148.275h19.791c8.436,0,11.066-3.854,11.884-6.151C330.615,139.822,331.009,135.161,324.442,129.811z" />
                 </svg>
-                Zurück zur Startseite
+                Go back home
             </div>
         </a>
         <div class="spacer layer1" id="layer1"></div>
@@ -143,8 +155,8 @@
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="http://discord.lxbs.de" title="Discord - LXBS">
-                        Discord
+                    <a target="_blank" href="mailto: support@lxbs.online" title="E-Mail - support@lxbs.online">
+                        E-Mail
                         <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
                             <path
                                 d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
@@ -154,8 +166,8 @@
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="mailto: support@lxbs.de" title="E-Mail - support@lxbs.de">
-                        E-Mail
+                    <a target="_blank" href="http://discord.lxbs.de" title="Discord - LXBS">
+                        Discord
                         <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
                             <path
                                 d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
@@ -190,6 +202,27 @@
             </tr>
             <tr>
                 <td>
+                    <a target="_blank" href="https://www.reddit.com/r/lxbs" title="Reddit - r/lxbs">
+                        Reddit
+                        <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
+                            <path
+                                d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
+                        </svg>
+                    </a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="https://www.github.com/LXBSdev" title="GitHub - LXBSdev">
+                        GitHub
+                        <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
+                            <path
+                                d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
+                        </svg>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <a target="_blank" href="leaderboard.html" title="Leaderboard - LXBS">
                         Leaderboard
                     </a>
@@ -200,17 +233,6 @@
             <tr>
                 <td>
                     <h1>Socials</h1>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a target="_blank" href="https://www.reddit.com/r/lxbs" title="Reddit - r/lxbs">
-                        Reddit
-                        <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
-                            <path
-                                d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
-                        </svg>
-                    </a>
                 </td>
             </tr>
             <tr>
@@ -237,13 +259,29 @@
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://www.tiktok.com/@lxbs_minecraft?is_from_webapp=1&sender_device=pc" title="TikTok - LXBS">
+                    <a target="_blank" href="https://www.tiktok.com/@lxbs_minecraft?is_from_webapp=1&sender_device=pc"
+                        title="TikTok - LXBS">
                         TikTok
                         <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
                             <path
                                 d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
                         </svg>
                     </a>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <h1>Language</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select onchange="javascript:location.href = this.value;">
+                        <option value="index.html">English</option>
+                        <option value="../de/index.html">Deutsch</option>
+                    </select>
                 </td>
             </tr>
         </table>
@@ -262,7 +300,7 @@
     </pride>
 
     <script>
-        function myFunction() {
+        function navigator() {
           var nav = document.getElementById("navigator");
           var svg = document.getElementById("svg-nav");
           if (nav.style.display === "flex") {
@@ -275,6 +313,11 @@
             svg.style.stroke = "#000000";
           }
         }
+    </script>
+    <script type="text/javascript">
+        window.onload = function(){
+            location.href=document.getElementById("selectbox").value;
+        }       
     </script>
 </body>
 

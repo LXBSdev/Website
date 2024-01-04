@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-    <title>1.20 Build Server! - LXBS</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/img/logo/logo-pixel-magenta-ico-v1.ico" />
-    <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="stylesheet" href="/css/server.min.css">
+    <title>404 - Page Not Found</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo/logo.ico" />
+    <link rel="stylesheet" href="../css/error.scss">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <button onclick="topFunction()" id="backtop">
-        <svg width="50" height="50" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
-        </svg>
-    </button>
     <nav>
         <a href="index.html">
             <img src="../img/logo/logo.png" alt="LXBS Logo">
@@ -26,12 +19,12 @@
                 LXBS
             </div>
         </a>
-        <a href="#" title="About the server">
+        <a href="server.html" title="Über den Server">
             <div class="div-1">
                 Server
             </div>
         </a>
-        <a href="dev/dev.html" title="Development">
+        <a href="dev/dev.html" title="Entwickler">
             <div class="div-3">
                 Dev
             </div>
@@ -47,7 +40,7 @@
 
             </div>
         </a>
-        <a href="support.html" title="Support & Help">
+        <a href="support.html" title="Support & Hilfe">
             <div class="div-6">
                 Support
             </div>
@@ -71,41 +64,41 @@
                     <ul id="navigator">
                         <li>
                             <a href="index.html" title="Home">
-                                <div class="div-1">
+                                <div>
                                     Home
                                 </div>
                             </a>
-                            <a href="server.html" title="About the server">
-                                <div class="div-1">
+                            <a href="server.html" title="Über den Server">
+                                <div>
                                     Server
                                 </div>
                             </a>
-                            <a href="dev/dev.html" title="Development">
-                                <div class="div-3">
+                            <a href="dev/dev.html" title="Entwickler">
+                                <div>
                                     Dev
                                 </div>
                             </a>
                             <a href="https://cloud.lxbs.de" title="Downloads">
-                                <div class="div-4">
+                                <div>
                                     Downloads
                                 </div>
                             </a>
                             <a href="http://discord.lxbs.de" title="Discord - LXBS">
-                                <div class="div-5">
+                                <div>
                                     Discord
 
                                 </div>
                             </a>
-                            <a href="support.html" title="Support & Help">
-                                <div class="div-6">
+                            <a href="support.html" title="Support & Hilfe">
+                                <div>
                                     Support
                                 </div>
                             </a>
                             <div>
                                 <select onchange="javascript:location.href = this.value;">
-                                    <option value="index.html">Language</option>
-                                    <option value="index.html">English</option>
-                                    <option value="../de/index.html">Deutsch</option>
+                                    <option value='none'>Sprache</option>
+                                    <option value="index.html">Deutsch</option>
+                                    <option value="../en/index.html">English</option>
                                 </select>
                             </div>
                         </li>
@@ -116,77 +109,31 @@
     </nav>
     <header>
         <div class="fontTitle">
-            The Server
+            404
         </div>
-        <div class="layer1" id="layer1"></div>
+        <div class="fontUndertitle">
+            Page Not Found
+        </div>
+        <a href="index.html">
+            <div class="home">
+                <svg fill="black" viewBox="0 0 330.242 330.242">
+                    <path
+                        d="M324.442,129.811l-41.321-33.677V42.275c0-6.065-4.935-11-11-11h-26c-6.065,0-11,4.935-11,11v14.737l-55.213-44.999
+                                c-3.994-3.254-9.258-5.047-14.822-5.047c-5.542,0-10.781,1.782-14.753,5.019L5.8,129.81c-6.567,5.351-6.173,10.012-5.354,12.314
+                                c0.817,2.297,3.448,6.151,11.884,6.151h19.791v154.947c0,11.058,8.972,20.053,20,20.053h62.5c10.935,0,19.5-8.809,19.5-20.053
+                                v-63.541c0-5.446,5.005-10.405,10.5-10.405h42c5.238,0,9.5,4.668,9.5,10.405v63.541c0,10.87,9.388,20.053,20.5,20.053h61.5
+                                c11.028,0,20-8.996,20-20.053V148.275h19.791c8.436,0,11.066-3.854,11.884-6.151C330.615,139.822,331.009,135.161,324.442,129.811z" />
+                </svg>
+                Zurück zur Startseite
+            </div>
+        </a>
+        <div class="spacer layer1" id="layer1"></div>
     </header>
-    <content>
-        <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" class="svg-1">
-            <image href="../img/minecraft_server/cherry-tree.png" height="400" width="400" class="svg-1" />
-        </svg>
-        <img src="../img/other/LXBS web pictures frame.svg" class="img-1">
-        <div class="text-1">
-            <h1>Welcome to <a style="color: #ff55ff; font-weight: bold;">LXBS</a>!</h1>
-            <br>
-            With a variety of events and servers, <br>
-            LXBS is the perfect server for you and your friends. <br>
-            <br>
-            <h2>Our Build Server is now online!</h2>
-            Together with the new Minecraft version we have released our build server. <br>
-            The server will be online from now on and will grow together with upcoming Minecraft versions. <br>
-            On our build server you can unleash your creativity <br>
-            and build masterful creations together with your friends. <br>
-            You can only join the build server with 1.20. <br>
-            Just enter <a style="color: #ff55ff; font-weight: bold; font-size: large;">lxbs.online</a> as IP and your
-            online <br>
-            <br>
-            <a href="http://discord.lxbs.de"><button>Join Our Discord</button></a>
-        </div>
-        <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" class="svg-2">
-            <image href="../img/minecraft_server/minecraft_screen_15_04_2022-2.png" height="400" width="400"
-                class="svg-2" />
-        </svg>
-        <img src="../img/other/LXBS web pictures frame-3.svg" class="img-2">
-        <div class="text-2">
-            <h1>About our Server</h1>
-            Our server is still under construction. <br>
-            We are working daily on our Minecraft server, <br>
-            Discord server and our website. <br>
-            Our strong team is working as hard as possible. <br>
-            However, we ask for your understanding. <br>
-            At the moment there are still many things that need work. <br>
-            There might be some bugs. We ask you not to get upset about problems, <br>
-            but report them. You can reach us at <a href="mailto: support@lxbs.de">support@lxbs.de</a>, or on our
-            Discord. <br>
-            We are also working on a feedback form for the website. <br>
-            If you want to have fun on our Minecraft server, <br>
-            feel free to join our <a href="http://discord.lxbs.de">Discord Server</a> and just join lxbs.online.
-        </div>
-        <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" class="svg-3">
-            <image href="../img/other/lxbs-nggyu-qr.png" height="400" width="400" class="svg-3" />
-        </svg>
-        <img src="../img/other/LXBS web pictures frame-4.svg" class="img-3">
-        <div class="text-3">
-            <h1>The Future</h1>
-            In the future there will be a wonderful lobby, in version 1.20. <br>
-            Of course you can join with versions below. <br>
-            From the lobby you can access our build server and all other games that are planned. <br>
-            We don't want to reveal too much about this yet. <br>
-            But we can already say that there will be many classic games as well as some originals. <br>
-            Some will only be available for selected versions, but the classics will be available for all versions. <br>
-            <svg width="50" height="50" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
-            </svg>
-            <h4>Follow the QR Code to get more Info</h4>
-        </div>
-    </content>
-    <div class="spacer layer2"></div>
     <footer>
         <table>
             <tr>
                 <td>
-                    <a href="index.html">
+                    <a href="#">
                         <img src="../img/logo/logo.png" alt="LXBS Logo">
                     </a>
                 </td>
@@ -195,20 +142,20 @@
                 <td>
                     <a style="color: #ff55ff; font-weight: bold;">LXBS</a> - Lowxy's Battle Server<br>
                     <br>
-                    With a variety of events and servers, <br>
-                    LXBS is the perfect server for you and your friends.
+                    Mit einer Vielzahl von Events und Servern, <br>
+                    ist LXBS der perfekte Server für dich und deine Freunde.
                 </td>
             </tr>
         </table>
         <table>
             <tr>
                 <td>
-                    <h1>Help & Questions</h1>
+                    <h1>Hilfe & Fragen</h1>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="mailto: support@lxbs.online" title="E-Mail - support@lxbs.online">
+                    <a target="_blank" href="mailto: support@lxbs.de" title="E-Mail - support@lxbs.de">
                         E-Mail
                         <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
                             <path
@@ -230,8 +177,8 @@
             </tr>
             <tr>
                 <td>
-                    <a href="DSGVOTMG.html" title="Privacy & Imprint">
-                        Privacy & Imprint
+                    <a href="DSGVOTMG.html" title="Datenschutz & Impressum">
+                        Datenschutz & Impressum
                     </a>
                 </td>
             </tr>
@@ -326,21 +273,21 @@
         <table>
             <tr>
                 <td>
-                    <h1>Language</h1>
+                    <h1>Sprache</h1>
                 </td>
             </tr>
             <tr>
                 <td>
                     <select onchange="javascript:location.href = this.value;">
-                        <option value="server.html">English</option>
-                        <option value="../de/server.html">Deutsch</option>
+                        <option value="index.html">Deutsch</option>
+                        <option value="../en/index.html">English</option>
                     </select>
                 </td>
             </tr>
         </table>
     </footer>
     <div class="end">
-        © LXBS 2023. All rights reserved. <br>
+        <a href="https://lxbs.de">LXBS</a> 2023 <br> <br>
         LXBS is not in any way affiliated with Mojang Studios or Microsoft. <br>
     </div>
     <pride>
@@ -351,6 +298,7 @@
         <blue></blue>
         <purple></purple>
     </pride>
+
     <script>
         function navigator() {
             var nav = document.getElementById("navigator");
@@ -363,30 +311,13 @@
                 nav.style.display = "flex";
                 svg.style.background = "#ffffff";
                 svg.style.stroke = "#000000";
-                svg.style.borderRadius = "5px"
             }
         }
-
+    </script>
+    <script type="text/javascript">
         window.onload = function(){
             location.href=document.getElementById("selectbox").value;
-        }   
-
-        let topbutton = document.getElementById("backtop");
-
-        window.onscroll = function() {backtop()};
-
-        function backtop() {
-            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-                topbutton.style.display = "block";
-            } else {
-                topbutton.style.display = "none";
-            }
-        }
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+        }       
     </script>
 </body>
 

@@ -1,0 +1,246 @@
+@import 'variables';
+@import 'fonts';
+@import 'functions';
+@import 'desktop-menu';
+@import 'mobile-menu';
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:link {
+    text-decoration: none;
+    color: $body-font-color;
+}
+
+a:visited {
+    color: $body-font-color;
+}
+
+body {
+    background-color: $body-bg-color;
+    color: $body-font-color;
+    margin: 0;
+    font-family: $body-font-family;
+}
+
+button {
+    background-color: $button-bg-color;
+    border: $button-border-size solid $button-border-color;
+    font-size: larger;
+    font-family: "Zilla Slab";
+    color: $button-color;
+    transition: .1s;
+    box-shadow: $button-box-shadow;
+
+    &:hover {
+        background-color: $button-bg-color-hover;
+        color: $button-color-hover;
+    }
+
+    &:active {
+        background-color: $button-bg-color-active;
+        transform: $button-transform-active;
+        box-shadow: $button-box-shadow-active;
+    }
+}
+
+#backtop {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 999;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    
+    &:hover svg {
+        fill: $button-color-hover;
+    }
+    
+    svg {
+        fill: $button-color;
+        rotate: -45deg;
+    }
+}
+
+.spacer {
+    aspect-ratio: 960/400;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url(../img/other/layer15.svg);
+}
+
+.layer2 {
+    background-image: url(../img/other/layer6.svg);
+}
+
+.layer3 {
+    background-image: url(../img/other/blob-scene-hakei-2.svg);
+}
+
+.layer5 {
+    background-image: url(../img/other/blob-scene-haikei-1.svg);
+}
+
+.layer4 {
+    background-image: url(../img/other/circle-scatter-haikei-2.svg);
+}
+
+footer {
+    height: auto;
+    color: #838793;
+    background-color: #111114;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    font-weight: bold;
+
+    table {
+        width: 100%;
+        height: 300px;
+        border-bottom: solid 1px #2b2f37;
+        padding: 20px 20px;
+    }
+
+    img {
+        width: 100px;
+        border-radius: 5px;
+    }
+
+    h1 {
+        color: $body-font-color;
+        font-size: 20px;
+        font-family: Minecraft;
+        font-weight: bold;
+    }
+
+    a {
+        color: #838793;
+        transition: 0.2s;
+    }
+
+    svg {
+        fill: #838793;
+        transition: 0.2s;
+    }
+
+    select {
+        width: 110px;
+        height: 30px;
+        border: none;
+        background: #111114;
+        color: #838793;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    @include mobile {
+        flex-direction: row;
+    }
+
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer a:link {
+    color: #838793;
+    transition: 0.2s;
+}
+
+footer a:link:hover {
+    color: #ffffff;
+}
+
+footer a:visited {
+    color: #838793;
+    transition: 0.2s;
+}
+
+footer a:visited:hover {
+    color: #ffffff;
+}
+
+footer a:hover svg {
+    fill: #ffffff;
+}
+
+footer select:hover {
+    background: #212127;
+}
+
+.end {
+    padding: 20px 20px;
+    height: auto;
+    color: #838793;
+    background-color: #111114;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.end a {
+    color: #838793;
+    transition: 0.2s;
+}
+
+.end a:hover {
+    color: #ffffff;
+}
+
+pride {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20px;
+}
+
+red {
+    height: 100%;
+    width: calc(100% / 6);
+    background-color: red;
+    color: red;
+}
+
+orange {
+    height: 100%;
+    width: calc(100% / 6);
+    background-color: orange;
+    color: orange;
+}
+
+yellow {
+    height: 100%;
+    width: calc(100% / 6);
+    background-color: yellow;
+    color: yellow;
+}
+
+green {
+    height: 100%;
+    width: calc(100% / 6);
+    background-color: green;
+    color: green;
+}
+
+blue {
+    height: 100%;
+    width: calc(100% / 6);
+    background-color: blue;
+    color: blue;
+}
+
+purple {
+    height: 100%;
+    width: calc(100% / 6);
+    background-color: purple;
+    color: purple;
+}

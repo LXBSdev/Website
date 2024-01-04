@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 
 <head>
-    <title>Dev - LXBS</title>
+    <title>Support - LXBS</title>
     <link rel="shortcut icon" type="image/x-icon" href="../img/logo/logo.ico" />
-    <link rel="stylesheet" href="../css/dev.css">
+    <link rel="stylesheet" href="../css/support.scss">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -19,22 +20,17 @@
                 LXBS
             </div>
         </a>
-        <a href="server.html" title="LXBS">
+        <a href="server.html" title="Über den Server">
             <div class="div-1">
                 Server
             </div>
         </a>
-        <a href="server.html" title="LXBS">
-            <div class="div-2">
-                Build
-            </div>
-        </a>
-        <a href="server.html" title="LXBS">
+        <a href="dev/dev.html" title="Entwickler">
             <div class="div-3">
-                Devs
+                Dev
             </div>
         </a>
-        <a href="https://cloud.lxbs.de" title="LXBS">
+        <a href="https://cloud.lxbs.de" title="Downloads">
             <div class="div-4">
                 Downloads
             </div>
@@ -45,7 +41,7 @@
 
             </div>
         </a>
-        <a href="support.html" title="Support & Help">
+        <a href="#" title="Support & Hilfe">
             <div class="div-6">
                 Support
             </div>
@@ -68,42 +64,44 @@
                     </a>
                     <ul id="navigator">
                         <li>
-                            <a href="index.html" title="LXBS">
-                                <div class="div-1">
+                            <a href="index.html" title="Home">
+                                <div>
                                     Home
                                 </div>
                             </a>
-                            <a href="server.html" title="LXBS">
-                                <div class="div-1">
+                            <a href="server.html" title="Über den Server">
+                                <div>
                                     Server
                                 </div>
                             </a>
-                            <a href="server.html" title="LXBS">
-                                <div class="div-2">
-                                    Build
+                            <a href="dev/dev.html" title="Entwickler">
+                                <div>
+                                    Dev
                                 </div>
                             </a>
-                            <a href="server.html" title="LXBS">
-                                <div class="div-3">
-                                    Devs
-                                </div>
-                            </a>
-                            <a href="https://cloud.lxbs.de" title="LXBS">
-                                <div class="div-4">
+                            <a href="https://cloud.lxbs.de" title="Downloads">
+                                <div>
                                     Downloads
                                 </div>
                             </a>
                             <a href="http://discord.lxbs.de" title="Discord - LXBS">
-                                <div class="div-5">
+                                <div>
                                     Discord
 
                                 </div>
                             </a>
-                            <a href="support.html" title="Support & Help">
-                                <div class="div-6">
+                            <a href="support.html" title="Support & Hilfe">
+                                <div>
                                     Support
                                 </div>
                             </a>
+                            <div>
+                                <select onchange="javascript:location.href = this.value;">
+                                    <option value='none'>Sprache</option>
+                                    <option value="support.html">Deutsch</option>
+                                    <option value="../en/support.html">English</option>
+                                </select>
+                            </div>
                         </li>
                     </ul>
                 </li>
@@ -111,41 +109,135 @@
         </div>
     </nav>
     <header>
-        <div class="container">
-            if (lxbs == <span class="auto-type"></span>) { <br>
-            <br>
-            }
+        <div class="fontTitle">
+            Support
         </div>
     </header>
     <content>
-        <div>
-            <h1>Unsere Mission</h1>
-            Wir als Organisation haben eine Mission.
-            So wie das Internet für alle da ist, sind es auch unsere Projekte.
-            Jeder kann von unseren Codes lernen. Von unseren HTML-Seiten bis zu unseren Minecraft-Plugins.
-            Das Schlüsselwort ist <a style="color: #ff55ff;">Open-Source</a>.
-            Wir wollen, dass jeder sehen kann, was wir machen und es nachbauen kann.
-        </div>
-        <div>
-            <h1>Wieso?</h1>
-            Wir wollen ein Zeichen setzen und zeigen, dass es möglich ist, eine Organisation zu führen und trotzdem den
-            Code und die Ressourcen mit der Community zu teilen.
-            All dies zu teilen, bedeutet nicht, dass jemand anderes es einfach "klaut". Es ist immer noch eine
-            Menge
-            Arbeit damit verbunden und nicht jeder hat die Zeit, all dies zu erstellen.
-            Außerdem kann uns die Community auf diese Weise sogar bei Problemen helfen und diese auf einer ganz anderen
-            Ebene lösen, da
-            sie auch Zugang zu dem gesamten Code haben.
-            Sie können auch sehen, wie unsere Projekte funktionieren, und auf diese Weise ist sichtbar, was wir tun, im
-            Gegensatz zu anderen
-            großen Unternehmen, bei denen man keine Ahnung hat, wie sie arbeiten, was sie mit den Daten machen, usw.
-        </div>
-        <div>
-            <h1>Wie?</h1>
-            Wie können du teilnehmen? <br>
-            Unser gesamter Code ist auf <a target="_blank" href="https://github.com/LXBSdev">GitHub</a> einsehbar.
-            Hier kanst du alle unsere Repositories einsehen und klonen oder herunterladen. Wenn du Vorschläge machen
-            möchtest, schreib uns gerne eine Nachricht an <a target="_blank" href="mailto: dev@lxbs.de">dev@lxbs.de</a>
+        <div class="container">
+            <div class="One">
+                Das Team
+            </div>
+            <div class="Three">
+                About us
+            </div>
+            <div class="Four">
+                Unser Team besteht aus mehreren Personen. <br>
+                In enger Zusammenarbeit arbeiten wir daran <br>
+                unsere Server noch besser zu machen. <br>
+            </div>
+            <div class="Three" id="teamMembers">
+                Team Members
+            </div>
+            <div class="Four">
+                <table>
+                    <tr>
+                        <td>
+                            Lowxy
+                        </td>
+                        <td>
+                            Manager
+                        </td>
+                        <td>
+                            Hard- und Software
+                        </td>
+                        <td>
+                            <a target="_blank" href="mailto: lowxy@lxbs.de" title="E-Mail - lowxy@lxbs.de">
+                                lowxy@lxbs.de
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            wyatt_was
+                        </td>
+                        <td>
+                            Software Entwicklung
+                        </td>
+                        <td>
+                            Minecraft und Discord Software, Website
+                        </td>
+                        <td>
+                            <a target="_blank" href="mailto: wyatt_was@lxbs.de" title="E-Mail - wyatt_was@lxbs.de">
+                                wyatt_was@lxbs.de
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Ninjanne
+                        </td>
+                        <td>
+                            Server Design
+                        </td>
+                        <td>
+                            Map Design
+                        </td>
+                        <td>
+                            <a target="_blank" href="mailto: ninjanne@lxbs.de" title="E-Mail - ninjanne@lxbs.de">
+                                Ninjanne@lxbs.de
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tintiklecks
+                        </td>
+                        <td>
+                            Grafik Design
+                        </td>
+                        <td>
+                            Texture and Map Design
+                        </td>
+                        <td>
+                            <a target="_blank" href="mailto: tinti@lxbs.de" title="E-Mail - tinti@lxbs.de">
+                                tinti@lxbs.de
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            sam
+                        </td>
+                        <td>
+                            Grafik Design
+                        </td>
+                        <td>
+                            Texture Design
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="One">
+                Kontakt
+            </div>
+            <div class="Three">
+                E-Mail:
+            </div>
+            <div class="Four">
+                <a target="_blank" href="mailto: support@lxbs.de" title="E-Mail - support@lxbs.de">
+                    support@lxbs.de
+                </a>
+            </div>
+            <div class="One">
+                Info zum Support
+            </div>
+            <div class="Three">
+                Probleme oder Fragen?
+            </div>
+            <div class="Four">
+                Bei Problemen oder Fragen könnt ihr <br>
+                euch immer gerne an unseren Support wenden. <br>
+                Am Besten schreibt ihr einfach eine Mail an unseren Support. <br>
+                <br>
+            </div>
+            <div class="Three">
+                Impressum
+            </div>
+            <div class="Four">
+                Alle Rechtlichen Informationen findet ihr hier: <br>
+                <a href="DSGVOTMG.html">Datenschutz & Impressum</a>
+            </div>
         </div>
     </content>
     <footer>
@@ -153,7 +245,7 @@
             <tr>
                 <td>
                     <a href="#">
-                        <img src="img/logo/logo.png" alt="LXBS Logo">
+                        <img src="../img/logo/logo.png" alt="LXBS Logo">
                     </a>
                 </td>
             </tr>
@@ -174,8 +266,8 @@
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="http://discord.lxbs.de" title="Discord - LXBS">
-                        Discord
+                    <a target="_blank" href="mailto: support@lxbs.de" title="E-Mail - support@lxbs.de">
+                        E-Mail
                         <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
                             <path
                                 d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
@@ -185,8 +277,8 @@
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="mailto: support@lxbs.de" title="E-Mail - support@lxbs.de">
-                        E-Mail
+                    <a target="_blank" href="http://discord.lxbs.de" title="Discord - LXBS">
+                        Discord
                         <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
                             <path
                                 d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
@@ -221,6 +313,27 @@
             </tr>
             <tr>
                 <td>
+                    <a target="_blank" href="https://www.reddit.com/r/lxbs" title="Reddit - r/lxbs">
+                        Reddit
+                        <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
+                            <path
+                                d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
+                        </svg>
+                    </a>
+                </td>
+            </tr><tr>
+                <td>
+                    <a target="_blank" href="https://www.github.com/LXBSdev" title="GitHub - LXBSdev">
+                        GitHub
+                        <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
+                            <path
+                                d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
+                        </svg>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <a target="_blank" href="leaderboard.html" title="Leaderboard - LXBS">
                         Leaderboard
                     </a>
@@ -231,17 +344,6 @@
             <tr>
                 <td>
                     <h1>Socials</h1>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a target="_blank" href="https://www.reddit.com/r/lxbs" title="Reddit - r/lxbs">
-                        Reddit
-                        <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
-                            <path
-                                d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
-                        </svg>
-                    </a>
                 </td>
             </tr>
             <tr>
@@ -279,6 +381,21 @@
                 </td>
             </tr>
         </table>
+        <table>
+            <tr>
+                <td>
+                    <h1>Sprache</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select onchange="javascript:location.href = this.value;">
+                        <option value="support.html">Deutsch</option>
+                        <option value="../en/support.html">English</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
     </footer>
     <div class="end">
         © LXBS 2023. Alle Rechte vorbehalten. <br>
@@ -308,14 +425,10 @@
             }
         }
     </script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["open-source"],
-            typeSpeed: 150,
-            backSpeed: 100,
-            loop: true
-        })
+    <script type="text/javascript">
+        window.onload = function(){
+            location.href=document.getElementById("selectbox").value;
+        }       
     </script>
 </body>
 
