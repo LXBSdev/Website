@@ -1,6 +1,15 @@
-ErrorDocument 404 /404.html
+ErrorDocument 404 /en/404.html
+ErrorDocument 503 /en/503.html
 
-<IfModule mod_rewrite.c>
-  RewriteEngine on
-  RewriteRule ^/file$ /folder/file [R]
-</IfModule>
+RewriteEngine on
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+Redirect /index.html /en/index.html
+Redirect /dev.html /en/dev.html
+Redirect /server.html /en/server.html
+Redirect /support.html /en/support.html

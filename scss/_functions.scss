@@ -1,0 +1,25 @@
+@import 'variables';
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return $body-font-color-dark;
+    } @else {
+        @return $body-font-color-light;
+    }
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin desktop {
+    @media screen and (min-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: $mobile) {
+        @content;
+    }
+}

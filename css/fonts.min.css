@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Minecraft";
+  src: url(../fonts/Minecraft/ttf/MinecraftRegular-Bmg3.ttf) format(truetype), url(../fonts/Minecraft/otf/MinecraftRegular-Bmg3.otf) format(opentype), url(../fonts/Minecraft/woff/MinecraftRegular-Bmg3.woff) format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Minecraft";
+  src: url(../fonts/Minecraft/ttf/MinecraftBold-nMK1.ttf) format(truetype), url(../fonts/Minecraft/otf/MinecraftBold-nMK1.otf) format(opentype), url(../fonts/Minecraft/woff/MinecraftBold-nMK1.woff) format(woff);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Minecraft";
+  src: url(../fonts/Minecraft/ttf/MinecraftBoldItalic-1y1e.ttf) format(truetype), url(../fonts/Minecraft/otf/MinecraftBoldItalic-1y1e.otf) format(truetype), url(../fonts/Minecraft/woff/MinecraftBoldItalic-1y1e.woff) format(woff);
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Minecraft";
+  src: url(../fonts/Minecraft/ttf/MinecraftItalic-R8Mo.ttf) format(truetype), url(../fonts/Minecraft/otf/MinecraftItalic-R8Mo.otf) format(opentype), url(../fonts/Minecraft/woff/MinecraftItalic-R8Mo.woff) format(woff);
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Regular.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Bold.ttf) format(truetype);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-BoldItalic.ttf) format(truetype);
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Black.ttf) format(truetype);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-BlackItalic.ttf) format(truetype);
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Italic.ttf) format(truetype);
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Light.ttf) format(truetype);
+  font-weight: 25;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-LightItalic.ttf) format(truetype);
+  font-weight: 25;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Medium.ttf) format(truetype);
+  font-weight: 50;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-MediumItalic.ttf) format(truetype);
+  font-weight: 50;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Thin.ttf) format(truetype);
+  font-weight: 10;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto/ttf/Roboto-Thin.ttf) format(truetype);
+  font-weight: 10;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Regular.ttf) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Bold.ttf) format(truetype);
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-BoldItalic.ttf) format(truetype);
+  font-weight: bolder;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Italic.ttf) format(truetype);
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Light.ttf) format(truetype);
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-LightItalic.ttf) format(truetype);
+  font-weight: light;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Medium.ttf) format(truetype);
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-MediumItalic.ttf) format(truetype);
+  font-weight: medium;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-SemiBold.ttf) format(truetype);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Zilla Slab";
+  src: url(../fonts/Zilla-Slab/tff/ZillaSlab-SemiBoldItalic.ttf) format(truetype);
+  font-weight: bold;
+  font-style: italic;
+}/*# sourceMappingURL=fonts.min.css.map */

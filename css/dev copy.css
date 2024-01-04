@@ -123,257 +123,179 @@ a:visited {
     font-style: italic;
 }
 
+@font-face {
+    font-family: Zilla Slab;
+    src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Zilla Slab;
+    src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Bold.ttf) format(truetype);
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Zilla Slab;
+    src: url(../fonts/Zilla-Slab/tff/ZillaSlab-BoldItalic.ttf) format(truetype);
+    font-weight: bolder;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Zilla Slab;
+    src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Italic.ttf) format(truetype);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Zilla Slab;
+    src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Light.ttf) format(truetype);
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Zilla Slab;
+    src: url(../fonts/Zilla-Slab/tff/ZillaSlab-LightItalic.ttf) format(truetype);
+    font-weight: light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Zilla Slab;
+    src: url(../fonts/Zilla-Slab/tff/ZillaSlab-Medium.ttf) format(truetype);
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Zilla Slab;
+    src: url(../fonts/Zilla-Slab/tff/ZillaSlab-MediumItalic.ttf) format(truetype);
+    font-weight: medium;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Zilla Slab;
+    src: url(../fonts/Zilla-Slab/tff/ZillaSlab-SemiBold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Zilla Slab;
+    src: url(../fonts/Zilla-Slab/tff/ZillaSlab-SemiBoldItalic.ttf) format(truetype);
+    font-weight: bold;
+    font-style: italic;
+}
+
 body {
     background: #0d041c;
     color: #ffffff;
     margin: 0;
     font-family: Roboto;
+    overflow-x: hidden;
 }
 
 nav {
-    z-index: 1000;
+    font-family: Consolas, 'Courier New', monospace;
     position: fixed;
-    background-color: #1a1b1e;
-    height: 80px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    border-bottom: solid 1px #2b2f37;
-    box-shadow: 0px 5px 10px black;
-    font-family: Roboto;
-    font-weight: 100;
-}
-
-nav a img {
-    height: 50px;
-    position: absolute;
-    left: 10px;
-    top: 15px;
-}
-
-nav div {
-    height: 50px;
-    width: 110px;
-    display: none;
-    margin: 5px;
-    transition: 0.2s;
-    font-size: 17px;
-}
-
-nav div:hover {
-    color: #000000;
-    background-color: #ffffff;
-}
-
-nav div:hover a:link {
-    color: #000000;
-}
-
-nav div:hover a:visited {
-    color: #000000;
-}
-
-nav div:hover svg {
-    fill: #000000;
-}
-
-nav div svg {
-    fill: #ffffff;
-    position: relative;
-    transition: 0.2s;
-}
-
-.lxbs {
-    position: absolute;
-    left: 60px;
-    top: 10px;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    font-family: Minecraft;
-    font-weight: normal;
-}
-
-@media screen and (min-width: 900px) {
-    nav div {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-    }
-    .lxbs {
-        position: relative;
-        margin-right: 60px;
-        top: 0;
-    }
-    nav img {
-        position: relative;
-    }
-}
-
-navigator {
-    fill: #ffffff;
-    position: absolute;
-    right: 0px;
-    top: 15px;
-    list-style: none;
-    display: flex;
-    align-items: right;
-    justify-content: right;
-}
-
-navigator div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    width: 100%;
-    height: 50px;
+    bottom: 100px;
+    right: 20px;
     font-size: 30px;
 }
 
-navigator ul {
-    list-style: none;
-}
-
-navigator svg {
-    position: absolute;
-    width: 50px;
-    top: 0;
-    right: 10px;
-    stroke: #ffffff;
-}
-
-navigator ul li ul {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    background-color: #1a1b1e;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    list-style: none;
-    right: 0px;
-    top: 65px;
-    z-index: 99;
-    color: #ffffff;
-    border-bottom: solid 1px #2b2f37;
-    box-shadow: 0px 11px 10px black;
-}
-
-@media screen and (min-width: 900px) {
-    navigator{
-       display: none;
-    }
+nav b {
+    color: rgb(156, 156, 156);
 }
 
 header {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
     width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
-    top: 0;
-    position: relative;
-    z-index: -1000;
+    height: 500px;
+    flex-direction: column;
 }
 
-@media (min-width: 1500px) {
-    header {
-        background-size: 100% auto;
-    }
+.container {
+    display: inline-block;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 1.6rem;
 }
 
-.image-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-}
-
-header img {
-    position: relative;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    height: calc(100vh + 400px);
-    width: 100%;
-}
-
-.title {
-    font-family: Minecraft;
-    font-size: 30vw;
-    position: relative;
-    z-index: 97;
-    text-shadow: black 5px 5px 1px;
-}
-
-.title img {
-    width: 10vw;
-    min-width: 300px;
-    height: auto;
-}
-
-@media screen and (min-width: 1300px) {
-    .title img {
-       width: 400px;
-    }
-    .title {
-        font-size: 100px;
-    }
+span {
+    color: #ff55ff;
 }
 
 content {
-    background:#0d041c;
+    height: auto;
+    width: 80%;
+    font-family: Zilla Slab;
+    font-size: 50px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
-    height: auto;
-    width: 100%;
+    margin-bottom: 100px;
+}
+
+content a:link {
+    color: aqua;
+    transition: 0.2s;
+}
+
+content a:visited {
+    color: aqua;
+    transition: 0.2s;
+}
+
+content a:visited:hover {
+    color: #ff55ff;
+}
+
+content a:link:hover {
+    color: #ff55ff;
 }
 
 content div {
-    width: 100px;
-    height: 100px;
-    background-color: green;
-    text-align: center;
-    border-radius: 15px;
-    margin: 10px;
+    text-align: right;
+    width: 95%;
+    max-width: 1000px;
 }
 
-.spacer {
-    aspect-ratio: 960/300;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+h1 {
+    font-size: 26.8vw;
+    color: #ff4f5e;
+    text-align: left;
 }
 
-.layer1 {
-    background-image: url(../img/other/layer15.svg);
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
+@media screen and (min-width: 750px) {
+    h1{
+       font-size: 200px;
+    }
 }
 
-.layer2 {
-    background-image: url(../img/other/layer6.svg);
+content a:link {
+    color: #ff55ff;
+    transition: 0.2s;
+}
+
+content a:visited {
+    color: #ff55ff;
+    transition: 0.2s;
+}
+
+content a:visited:hover {
+    color: aqua;
+}
+
+content a:link:hover {
+    color: aqua;
 }
 
 footer {
@@ -401,6 +323,7 @@ footer table {
 
 footer img {
     width: 100px;
+    border-radius: 5px;
 }
 
 footer h1 {
@@ -444,6 +367,21 @@ footer svg {
 
 footer a:hover svg {
     fill: #ffffff;
+}
+
+footer select {
+    width: 110px;
+    height: 30px;
+    border: none;
+    background: #111114;
+    color: #838793;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: large;
+}
+
+footer select:hover {
+    background: #212127;
 }
 
 .end {

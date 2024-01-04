@@ -1,0 +1,39 @@
+@import 'functions';
+
+$font-zilla-slab: "Zilla Slab";
+$font-minecraft: "Minecraft";
+$font-roboto: "Roboto";
+$magenta-lxbs: #ff55ff;
+$mobile: 900px;
+
+$body-bg-color-light: #f3f3f3;
+$body-bg-color-dark: #0d041c;
+$body-bg-color: $body-bg-color-dark;
+$body-font-color-light: #f3f3f3;
+$body-font-color-dark: #0d041c;
+$body-font-color: set-text-color($body-bg-color);
+$body-font-family: $font-zilla-slab;
+
+$button-color: #000;
+$button-color-hover: #f3f3f3;
+$button-bg-color: #f3f3f3;
+$button-bg-color-hover: $magenta-lxbs;
+$button-bg-color-active: rgb(180, 50, 180);
+$button-border-size: 5px;
+$button-border-color: #000;
+$button-box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.699);
+$button-box-shadow-active: 1px 1px 0px rgba(0, 0, 0, 0.699);
+$button-transform-active: translate(9px, 9px);
+
+$nav-bg-img: linear-gradient(rgba(26,27,30,.9), rgba(26,27,30,0.7));
+$nav-height: 70px;
+$nav-width: 100%;
+$nav-font-weight: 100;
+
+$nav-div-height: 40px;
+$nav-div-width: 110px;
+$nav-div-font-size: 20px;
+$nav-div-transform-hover: translate(-5px, -5px);
+$nav-div-transform-active: translate(0px, 0px);
+$nav-div-box-shadow-hover: 5px 5px 0px rgba(0, 0, 0, 0.699);
+$nav-div-box-shadow-active: $button-box-shadow-active;

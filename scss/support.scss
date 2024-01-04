@@ -1,0 +1,112 @@
+@import url(main.scss);
+@import url(fonts.scss);
+
+body {
+    background-image: url(../img/server_setup/server_setup_hardware_fujtsu_01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    position: relative;
+    z-index: -1000;
+}
+
+.fontTitle {
+    font-family: Minecraft;
+    font-size: 20vw;
+    position: relative;
+    text-shadow: black 5px 5px 1px;
+}
+
+content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    overflow-x: hidden;
+}
+
+content a:link {
+    color: #ff55ff;
+    transition: 0.2s;
+}
+
+content a:visited {
+    color: #ff55ff;
+    transition: 0.2s;
+}
+
+content a:visited:hover {
+    color: aqua;
+}
+
+content a:link:hover {
+    color: aqua;
+}
+
+.container {
+    border: solid 0px none;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #000000;
+    box-shadow: 0px 0px 2px gray;
+}
+
+table td {
+    padding: 5px;
+    overflow-x: scroll;
+}
+
+.One {
+    font-size: 30px;
+    margin: 10px;
+    font-weight: 50;
+}
+
+.Two {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.Three {
+    font-size: 20px;
+    margin: 10px;
+    border-bottom: solid 1px #411e4e;
+    color: rgb(155, 155, 155);
+    font-weight: 25;
+}
+
+.Four {
+    margin: 10px;
+}
+
+@media screen and (min-width: 1400px) {
+    .fontTitle {
+       font-size: 280px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    content {
+        overflow-x: scroll;
+    }
+
+    .container {
+        margin-right: 0;
+        margin-left: 0;
+        border-right: none;
+        border-left: none;
+        border-radius: 0;
+        align-items: start;
+        justify-content: left;
+        width: 100%;
+    }
+}
