@@ -3,9 +3,9 @@
 
 <head>
     <title>Development - LXBS</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/img/logo/logo-pixel-magenta-ico-v1.ico" />
-    <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="stylesheet" href="/css/dev.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/logo/logo-pixel-magenta-ico-v1.ico" />
+    <link rel="stylesheet" href="../../css/main.min.css">
+    <link rel="stylesheet" href="../../css/dev.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -17,109 +17,59 @@
                 d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
         </svg>
     </button>
-    <nav>
-        <a href="../index.html">
-            <img src="../../img/logo/logo.png" alt="LXBS Logo">
-        </a>
-        <a href="../index.html" title="Home">
-            <div class="lxbs">
-                LXBS
-            </div>
-        </a>
-        <a href="../server.html" title="About the server">
-            <div class="div-1">
-                Server
-            </div>
-        </a>
-        <a href="#" title="Development">
-            <div class="div-3">
-                Dev
-            </div>
-        </a>
-        <a href="https://cloud.lxbs.de" title="Downloads">
-            <div class="div-4">
-                Downloads
-            </div>
-        </a>
-        <a href="http://discord.lxbs.de" title="Discord - LXBS">
-            <div class="div-5">
-                Discord
-
-            </div>
-        </a>
-        <a href="../support.html" title="Support & Help">
-            <div class="div-6">
-                Support
-            </div>
-        </a>
-        <div class="navigator">
-            <ul>
-                <li>
-                    <a href="javascript:void(0);" onclick="navigator()">
-                        <svg id="svg-nav" viewBox="0 0 24 24">
-                            <path
-                                d="M13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6C12.5523 6 13 5.55228 13 5Z"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12Z"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19Z"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+    <header>
+        <nav class="nav">
+            <a href="#">
+                <img src="../../img/logo/logo.png" alt="LXBS Logo">
+            </a>
+            <a href="../index.html" title="Home">
+                <div class="lxbs">
+                    LXBS
+                </div>
+            </a>
+            <a href="#" title="Development">
+                <div class="div-3">
+                    Dev
+                </div>
+            </a>
+            <a href="http://discord.lxbs.online" title="Discord - LXBS">
+                <div class="div-5">
+                    Discord
+                </div>
+            </a>
+            <a href="../support.html" title="Support & Help">
+                <div class="div-6">
+                    Support
+                </div>
+            </a>
+        </nav>
+        <div class="menu-button">
+            <span class="menu-button__burger"></span>
+        </div>
+        <nav class="mobile_nav">
+            <ul class="menu-nav">
+                <li class="menu-nav__item active">
+                    <a href="index.html" class="menu-nav__link">
+                        Home
                     </a>
-                    <ul id="navigator">
-                        <li>
-                            <a href="../index.html" title="Home">
-                                <div class="div-1">
-                                    Home
-                                </div>
-                            </a>
-                            <a href="../server.html" title="About the server">
-                                <div class="div-1">
-                                    Server
-                                </div>
-                            </a>
-                            <a href="..dev/dev.html" title="Development">
-                                <div class="div-3">
-                                    Dev
-                                </div>
-                            </a>
-                            <a href="https://cloud.lxbs.de" title="Downloads">
-                                <div class="div-4">
-                                    Downloads
-                                </div>
-                            </a>
-                            <a href="http://discord.lxbs.de" title="Discord - LXBS">
-                                <div class="div-5">
-                                    Discord
-
-                                </div>
-                            </a>
-                            <a href="../support.html" title="Support & Help">
-                                <div class="div-6">
-                                    Support
-                                </div>
-                            </a>
-                            <div>
-                                <select onchange="javascript:location.href = this.value;">
-                                    <option value='none'>Language</option>
-                                    <option value="dev/dev.html">English</option>
-                                    <option value="/../../dedev/dev.html">Deutsch</option>
-                                </select>
-                            </div>
-                        </li>
-                    </ul>
+                </li>
+                <li class="menu-nav__item active">
+                    <a href="index.html" class="menu-nav__link">
+                        Dev
+                    </a>
+                </li>
+                <li class="menu-nav__item active">
+                    <a href="index.html" class="menu-nav__link">
+                        Discord
+                    </a>
+                </li>
+                <li class="menu-nav__item active">
+                    <a href="index.html" class="menu-nav__link">
+                        Support
+                    </a>
                 </li>
             </ul>
-        </div>
-    </nav>
-    <header>
-        <div class="container">
-            if (lxbs == <span class="auto-type"></span>) { <br>
-            <br>
-            }
-        </div>
+        </nav>
     </header>
     <content>
         <div>
@@ -154,7 +104,7 @@
             <tr>
                 <td>
                     <a href="index.html">
-                        <img src="../img/logo/logo.png" alt="LXBS Logo">
+                        <img src="../../img/logo/logo.png" alt="LXBS Logo">
                     </a>
                 </td>
             </tr>
@@ -186,7 +136,7 @@
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="http://discord.lxbs.de" title="Discord - LXBS">
+                    <a target="_blank" href="http://discord.lxbs.online" title="Discord - LXBS">
                         Discord
                         <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
                             <path
@@ -197,7 +147,7 @@
             </tr>
             <tr>
                 <td>
-                    <a href="DSGVOTMG.html" title="Privacy & Imprint">
+                    <a href="../DSGVOTMG.html" title="Privacy & Imprint">
                         Privacy & Imprint
                     </a>
                 </td>
@@ -211,7 +161,7 @@
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="http://discord.lxbs.de" title="Discord - LXBS">
+                    <a target="_blank" href="http://discord.lxbs.online" title="Discord - LXBS">
                         Discord
                         <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
                             <path
@@ -241,13 +191,6 @@
                     </a>
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <a target="_blank" href="leaderboard.html" title="Leaderboard - LXBS">
-                        Leaderboard
-                    </a>
-                </td>
-            </tr>
         </table>
         <table>
             <tr>
@@ -268,8 +211,19 @@
             </tr>
             <tr>
                 <td>
-                    <a target="_blank" href="https://twitter.com/LXBS_Minecraft?s=20" title="Twitter - LXBS">
+                    <a target="_blank" href="https://twitter.com/LXBS_Minecraft" title="Twitter - LXBS">
                         Twitter
+                        <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
+                            <path
+                                d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
+                        </svg>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a target="_blank" rel="me" href="https://mastodon.social/@lxbs" title="Mastodon - LXBS">
+                        Mastodon
                         <svg width="15px" height="15px" viewBox="0 0 16 16" fill="currentFill">
                             <path
                                 d="M12.943 3.463A.748.748 0 0012.25 3h-5.5a.75.75 0 000 1.5h3.69l-7.22 7.22a.75.75 0 101.06 1.06l7.22-7.22v3.69a.75.75 0 001.5 0v-5.5a.747.747 0 00-.057-.287z" />
@@ -299,8 +253,8 @@
             <tr>
                 <td>
                     <select onchange="javascript:location.href = this.value;">
-                        <option value="dev/dev.html">English</option>
-                        <option value="../de/dev/dev.html">Deutsch</option>
+                        <option value="../index.html">English</option>
+                        <option value="../../de/index.html">Deutsch</option>
                     </select>
                 </td>
             </tr>
